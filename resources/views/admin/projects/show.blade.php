@@ -10,6 +10,7 @@
 
         <div class="col-12">
             <h1>{{ $project->nome}}</h1>
+            <p class="d-inline-block px-3 rounded" style="background: {{$project->type->colore}}">{{ $project->type->nome}}</p>
             <p>{{ $project->linguaggio}}</p>
             <p class="text-center"><a href=" {{ $project->url_repo}}">Clicca qui per Git Hub</a></p>
             <p>{{$project->info}}</p>

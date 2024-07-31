@@ -13,6 +13,7 @@
                 <thead>
                     <tr>
                         <th scope="col">Nome</th>
+                        <th scope="col">Tipo</th>
                         <th scope="col">Linguaggio</th>
                         <th scope="col" class="text-center">Link Git Hub</th>
                         <th scope="col" class="text-center">Azioni</th>
@@ -23,6 +24,7 @@
                     @foreach ($projects as $project)
                         <tr>
                             <td>{{ $project->nome}}</td>
+                            <td>{{  $project->type->nome }}</td>
                             <td>{{ $project->linguaggio}}</td>
                             <td class="text-center"><a href=" {{ $project->url_repo}}">Clicca qui per Git Hub</a></td>
                             <td>
